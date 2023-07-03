@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Autonomous RC Car</title>
+    <!-- EDIT HTML PAGE TITLE -->
+    <title>Automated Curtain Opener</title>
     <meta name="description" content="an rc that drives. By itself...kinda" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -83,21 +84,21 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Autonomous Car Race Project</h1>
+        <h1 class="heading-primary">Automated Curtain Opener</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            This was one of my hardest and most rewarding project i've done.
-                It's a modified off-the-shelf rc from a big box store.
-                TLDR: It's a self driving car...<em>kinda</em> but it works!
+            This is an embedded sytems project. It uses a microcontroller to sense a noise based on a threshold and actuate motor control for opening and closing curtains. 
+                <strong>TLDR:</strong> Will open and close your curtian when you snap your fingers.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://youtu.be/KAy_LBTywio" class="btn btn--bg" target="_blank">Demo Video</a>
+          <a href="https://youtu.be/sEjKm0Vb6mc" class="btn btn--bg" target="_blank">Demo Video</a>
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
         </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
+
     </section>
     <section class="project-details">
       <div class="main-container">
@@ -113,53 +114,46 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Our overall goal was to simulate real-world driving situations such as driving in between lanes, turning, and speed adjustment
-                while avoiding other cars to reach the end of track. The project design objective is to complete two vehicles (two modified RC cars) for this scenario. 
-                One <strong>autonomous</strong> vehicle and one <strong>manual</strong> controlled vehicle to simulate other drivers. 
-                Key features of the project include the autonomous vehicle with <strong>two driving modes</strong> (manual control and self-driving) and a radio-controlled vehicle.
-
+              This project is meant to simulate a single component in a smart home system. I choose to create an automated curtain opener.
+              Other than ease of use, automated curtain openers provide enhanced accessibility for individuals with mobility limitations or disabilities. 
+              People who may have difficulty reaching or manipulating the curtains can benefit from the convenience of automated control.
               </p>
               <p class="project-details__desc-para">
-                Testing of our proposed design lead to feasible working prototype. 
-                The team created a custom radio-controller, our own TCP command processing communication system and worked upon well-known computer vision processing ideas to process lanes.
+               Using the <strong>FRDM-K64F</strong> Development Board, the system is designed to use the boards' <strong>interrupt and GPIO pins</strong>. 
+               The <strong>microphone</strong> connected on the interrupt pin is adjusted via the on board potentiometer.
+               After a snap is detected and the interrupt triggers a mode change, the corresponding control code block will execute.
+               This is where the <strong>motor</strong> is triggered to use a created <strong>pulley system</strong>.
+               This will be either the opening or closing of the curtians.
               </p>
 
               <p class="project-details__desc-para">
-                I had so much fun contributing to this project and creating the control systems.
-                Check out our <strong>demo video, code repo, and team Notion board below!</strong>
+                This was an awesome project using a different development toolchain than my normal Arduino and RaspberryPi.
+                Check out my <strong>demo video and code repo below!</strong>
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">Python</div>
-                <div class="skills__skill">C++</div>
-                <div class="skills__skill">Open CV</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Conda</div>
-                <div class="skills__skill">Arduino</div>
-                <div class="skills__skill">Raspberry Pi 4B</div>
+                <div class="skills__skill">FRDM-K64F Dev Board</div>
+                <div class="skills__skill">C</div>
+                <div class="skills__skill">GPIO Configuration</div>
+                <div class="skills__skill">Interrupt Configuration</div>
+                <div class="skills__skill">Kinetis Design Studio</div>
               </div>
             </div>
             <div class="project-details__links">
               <h3 class="project-details__content-title">See It In Action</h3>
               <a
-                href="https://youtu.be/KAy_LBTywio"
+                href="https://youtu.be/sEjKm0Vb6mc"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
                 >Demo Video</a
               >
               <a
-                href="https://github.com/lpurgitoryl/rc-car"
+                href="https://github.com/lpurgitoryl/FRDM-K64F-CurtainOpener"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Repo Link</a
-              >
-              <a
-                href="https://spring-sedum-f0d.notion.site/EE175AB-Senior-Design-57c6afec0f274c888fcb574c83d3d569"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Notion</a
               >
             </div>
           </div>
