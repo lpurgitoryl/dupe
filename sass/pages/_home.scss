@@ -187,6 +187,28 @@
   }
 }
 
+.resume {
+  background: linear-gradient(
+      to right,
+      rgba($themeClrPrimary, 0.8),
+      rgba($themeClrPrimary, 0.8)
+    ),
+    url(/assets/svg/common-bg.svg);
+  background-size: cover;
+  background-position: center;
+
+  &__btn {
+    width: 30%;
+
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+
 .contact {
   background: linear-gradient(
       to right,
