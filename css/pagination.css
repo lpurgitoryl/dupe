@@ -19,8 +19,8 @@
     z-index: 1090;
   }
   .pagination-link .pagination-icon i {
-    line-height: 70px;
-    font-size: 2em;
+    line-height: 100px;
+    font-size: 4em;
     color: #2C3E50;
   }
   .pagination-link .pagination-title {
@@ -47,7 +47,7 @@
   .pagination-link .pagination-title h2 {
     color: #2C3E50;
     display: table-cell;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: -0.02em;
     line-height: 1.3em;
     margin: 0;
