@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -85,7 +86,7 @@
         <h1 class="heading-primary">Hey, My name is Nicole Garcia</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            I'm a full time student and part time tinkerer with a special interest in embedded systems.
+            I'm a new grad and part time tinkerer with a special interest in embedded systems.
             Take a look at my projects or learn more about me below.
           </p>
         </div>
@@ -131,8 +132,8 @@
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Welcome!
-                I'm currently a fifth year <strong>Computer Engineer</strong> undergaduate student at the University of California, Riverside.
-                I spend a lot of my time <strong>researching and implementing new technologies</strong> as an Instructional Design Student Asssistant and a California Learning Lab Research Assistant at UCR.
+                I recently graduated from the University of California, Riverside with a bachelor's in <strong>computer engineering</strong>.
+                During my undergraduate education I spent a lot of my time <strong>researching and implementing new technologies</strong> as an Instructional Design Student Asssistant and a California Learning Lab Research Assistant.
               </p>
               <p class="about__content-details-para">
                 I like to think of myself of a <strong>maker</strong> and <strong>tinkerer</strong>.
@@ -151,12 +152,12 @@
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Conda</div>
               <div class="skills__skill">Python</div>
-              <div class="skills__skill">C++</div>
+              <div class="skills__skill">C/C++</div>
               <div class="skills__skill">Embedded Systems</div>
-              <div class="skills__skill">Articulate Storyline</div>
+              <div class="skills__skill">Flask</div>
               <div class="skills__skill">Django</div>
-              <div class="skills__skill">Data Visulation</div>
 
             </div>
           </div>
@@ -185,59 +186,86 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Autonomous Car Race Project</h3>
+              <h3 class="projects__row-content-title">Autonomous RC Car</h3>
               <p class="projects__row-content-desc">
                 This was one of my hardest and most rewarding project i've done.
                 It's a modified off-the-shelf rc from a big box store.
-                TLDR: It's a self driving car...<em>kinda</em> but it works!
+                <strong>TLDR:</strong> It's a self driving car...<em>kinda,</em> but it works!
               </p>
               <a
                 href="./project-1.html"
                 class="btn btn--med btn--theme dynamicBgClr"
-                >I must see the car</a
+                >View Project</a
               >
             </div>
           </div>
-          <!-- <div class="projects__row">
+
+
+          <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
+                src="./assets/png/curtain.PNG"
                 alt="Software Screenshot"
                 class="projects__row-img"
                 loading="lazy"
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
+              <h3 class="projects__row-content-title">Automated Curtain Opener</h3>
               <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
+                This is an embedded sytems project. It uses a microcontroller to sense a noise based on a threshold and actuate motor control for opening and closing curtains. 
+                <strong>TLDR:</strong> Will open and close your curtian when you snap your fingers.
               </p>
               <a
                 href="./project-2.html"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
+                >View Project</a
               >
             </div>
-          </div> -->
+          </div>
+
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/samurai.PNG"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Flying Samurai (JavaScript Game)</h3>
+              <p class="projects__row-content-desc">
+                 It's a JavaScript and HTML game! I got to experiment with basic game development concepts and how to created good object oriented design principles.<br>
+                <strong>TLDR:</strong> A cool two player arcade style game. 
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                >View Project</a
+              >
+            </div>
+          </div>
           
         </div>
       </div>
     </section>
-    <section id="resume" class="contact sec-pad dynamicBg">
+    <section id="resume" class=" resume sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Resume</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            If you'd like to know more about me feel free to click below and view my resume xD
+            If you'd like to know more about me feel free to click below and view my resume.
           </span>
         </h2>
         <div class="home-hero__cta">
           <a href="https://docs.google.com/document/d/1rn_rlqDTpbdPDsE7WOFmtQyD8vsciE-H45CuMbhW-5E/edit?usp=sharing" class="btn btn--bg" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
-        <!-- <div class="contact__form-container">
+      </div>
+    </section>
+    <!-- <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <div class="contact__form-container">
           <form action="#" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
@@ -277,9 +305,9 @@
               Submit
             </button>
           </form>
-        </div> -->
+        </div>
       </div>
-    </section>
+    </section> -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">

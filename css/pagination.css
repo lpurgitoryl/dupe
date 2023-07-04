@@ -1,0 +1,150 @@
+.pagination-link {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .pagination-link .pagination-icon {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    opacity: 1;
+    text-align: center;
+    z-index: 1090;
+  }
+  .pagination-link .pagination-icon i {
+    line-height: 100px;
+    font-size: 4em;
+    color: #2C3E50;
+  }
+  .pagination-link .pagination-title {
+    -webkit-transition: -webkit-transform 100ms ease-in-out, opacity 150ms ease-in-out, visibility 0 linear 150ms;
+    -moz-transition: -moz-transform 100ms ease-in-out, opacity 150ms ease-in-out, visibility 0 linear 150ms;
+    transition: transform 100ms ease-in-out, opacity 150ms ease-in-out, visibility 0 linear 150ms;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    pointer-events: none;
+    display: table;
+    position: absolute;
+    width: 280px;
+    min-height: 70px;
+    box-sizing: border-box;
+    z-index: 1089;
+  }
+  .pagination-link .pagination-title h2 {
+    color: #2C3E50;
+    display: table-cell;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    line-height: 1.3em;
+    margin: 0;
+    padding: rem-calc(0 16 0 0);
+    text-transform: none;
+    text-decoration: none;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .pagination-link .pagination-title h2 em {
+    color: #E74C3C;
+  }
+  
+  .pagination-link:hover .pagination-title {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .pagination-link--prev {
+    right: auto;
+    left: 0;
+    text-align: left;
+  }
+  .pagination-link--prev .pagination-title {
+    left: 0;
+    -webkit-transform: translate3d(-30px, -50%, 0);
+    -moz-transform: translate3d(-30px, -50%, 0);
+    -ms-transform: translate3d(-30px, -50%, 0);
+    -o-transform: translate3d(-30px, -50%, 0);
+    transform: translate3d(-30px, -50%, 0);
+  }
+  .pagination-link--prev .pagination-title h2 {
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 0;
+  }
+  
+  .pagination-link--prev:hover .pagination-title {
+    -webkit-transition: opacity 150ms ease-out, -webkit-transform ease-out 150ms;
+    -moz-transition: opacity 150ms ease-out, -moz-transform ease-out 150ms;
+    transition: opacity 150ms ease-out, transform ease-out 150ms;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  .pagination-link--prev:hover .pagination-icon i {
+    -webkit-transition: opacity 150ms ease-out, -webkit-transform ease-out 150ms;
+    -moz-transition: opacity 150ms ease-out, -moz-transform ease-out 150ms;
+    transition: opacity 150ms ease-out, transform ease-out 150ms;
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  
+  .pagination-link--next {
+    left: auto;
+    right: 0;
+    text-align: right;
+  }
+  .pagination-link--next .pagination-title {
+    right: 0;
+    -webkit-transform: translate3d(30px, -50%, -50px);
+    -moz-transform: translate3d(30px, -50%, -50px);
+    -ms-transform: translate3d(30px, -50%, -50px);
+    -o-transform: translate3d(30px, -50%, -50px);
+    transform: translate3d(30px, -50%, -50px);
+  }
+  .pagination-link--next .pagination-title h2 {
+    text-align: right;
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  
+  .pagination-link--next:hover .pagination-title {
+    -webkit-transition: opacity 150ms ease-out, -webkit-transform ease-out 150ms;
+    -moz-transition: opacity 150ms ease-out, -moz-transform ease-out 150ms;
+    transition: opacity 150ms ease-out, transform ease-out 150ms;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  .pagination-link--next:hover .pagination-icon i {
+    -webkit-transition: opacity 150ms ease-out, -webkit-transform ease-out 150ms;
+    -moz-transition: opacity 150ms ease-out, -moz-transform ease-out 150ms;
+    transition: opacity 150ms ease-out, transform ease-out 150ms;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+    transform: translateX(40px);
+    opacity: 0;
+  }

@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Autonomous RC Car</title>
-    <meta name="description" content="an rc that drives. By itself...kinda" />
+    <!-- EDIT HTML PAGE TITLE -->
+    <title>Flying Samurai</title>
+    <meta name="description" content="Javascript game" />
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pagination.css" />
@@ -88,47 +89,47 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Autonomous RC Car</h1>
+        <h1 class="heading-primary">Flying Samurai (JavaScript Game)</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            This was one of my hardest and most rewarding project i've done.
-                It's a modified off-the-shelf rc from a big box store.
-                TLDR: It's a self driving car...<em>kinda</em> but it works!
+            It's a JavaScript and HTML game! I got to experiment with basic game development concepts and how to created good object oriented design principles.<br>
+                <strong>TLDR:</strong> A cool two player arcade style game. 
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://youtu.be/KAy_LBTywio" class="btn btn--bg" target="_blank">Demo Video</a>
+          <a href="https://flying-samurai-game.vercel.app/" class="btn btn--bg" target="_blank">Live Demo</a>
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+          <div class="mouse"></div>
         </div>
       </div>
-      <div class="home-hero__mouse-scroll-cont">
-        <div class="mouse"></div>
-      </div>
+
     </section>
     <section class="nav_arrows">
-      <!-- <a href="./project-3.html" class="pagination-link pagination-link--prev">
+      <a href="./project-2.html" class="pagination-link pagination-link--prev">
         <div class="pagination-icon">
           <i class="material-icons">keyboard_arrow_left</i>
         </div>
         <span class="pagination-title">
-          <h2><em>Previous Project</em><br>Flying Samurai (JavaScript Game)</h2>
+          <h2><em>Previous Project</em><br>Automated Curtain Opener</h2>
         </span>
-      </a> -->
+      </a>
   
-      <a href="./project-2.html" class="pagination-link pagination-link--next">
+      <!-- <a href="#" class="pagination-link pagination-link--next">
         <div class="pagination-icon">
           <i class="material-icons">keyboard_arrow_right</i>
         </div>
         <span class="pagination-title">
-          <h2><em>Next Project</em><br>Automated Curtain Opener</h2>
+          <h2><em>Next Project</em><br>The Next Article I Wrote</h2>
         </span>
-      </a>
+      </a> -->
     </section>
     <section class="project-details">
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/png/carr.png"
+              src="./assets/png/samurai.PNG"
               alt="Project Image"
               class="project-details__showcase-img"
             />
@@ -137,60 +138,43 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Our overall goal was to simulate real-world driving situations such as driving in between lanes, turning, and speed adjustment
-                while avoiding other cars to reach the end of track. The project design objective is to complete two vehicles (two modified RC cars) for this scenario. 
-                One <strong>autonomous</strong> vehicle and one <strong>manual</strong> controlled vehicle to simulate other drivers. 
-                Key features of the project include the autonomous vehicle with <strong>two driving modes</strong> (manual control and self-driving) and a radio-controlled vehicle.
-
+              This weekend project was an aswesome introduction to JavaScript OOP and game design/developemnt concepts.
+              I also was able to use hosting/deploment services like Vercel to make a playable live demo.
               </p>
               <p class="project-details__desc-para">
-                Testing of our proposed design lead to feasible working prototype. 
-                The team created a custom radio-controller, our own TCP command processing communication system and worked upon well-known computer vision processing ideas to process lanes.
-              </p>
-
-              <p class="project-details__desc-para">
-                I had so much fun contributing to this project and creating the control systems.
-                Check out our <strong>demo video, code repo, and team Notion board below!</strong>
+                Check out my <strong>live demo and code repo below!</strong>
               </p>
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">Python</div>
-                <div class="skills__skill">C++</div>
-                <div class="skills__skill">Open CV</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Conda</div>
-                <div class="skills__skill">Arduino</div>
-                <div class="skills__skill">Raspberry Pi 4B</div>
+                <div class="skills__skill">JavaScript</div>
+                <div class="skills__skill">Object Oriented Programing</div>
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">CSS</div>
+                <div class="skills__skill">Vercel</div>
               </div>
             </div>
             <div class="project-details__links">
               <h3 class="project-details__content-title">See It In Action</h3>
               <a
-                href="https://youtu.be/KAy_LBTywio"
+                href="https://flying-samurai-game.vercel.app/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Demo Video</a
-              >
+                >Live Demo</a>
+              
               <a
-                href="https://github.com/lpurgitoryl/rc-car"
+                href="https://github.com/lpurgitoryl/flying-samurai-game"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Code Repo Link</a
-              >
-              <a
-                href="https://spring-sedum-f0d.notion.site/EE175AB-Senior-Design-57c6afec0f274c888fcb574c83d3d569"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Notion</a
               >
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <!-- <section id="resume" class="contact dynamicBg" style ="padding-inline: 5% 10%;">
       <div class="main-container">
         <div class="contact__form-container">
