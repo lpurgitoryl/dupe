@@ -11,4 +11,14 @@
     font-weight: 600;
     color: #777;
   }
+  &__skill:hover {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    background: rgba($themeClrPrimary,.2);
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    color: #000000;
+  }
 }
