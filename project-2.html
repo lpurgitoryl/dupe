@@ -1,255 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- EDIT HTML PAGE TITLE -->
-    <title>Automated Curtain Opener</title>
-    <meta name="description" content="a curtain that closes and opens" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/pagination.css" />
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- EDIT HTML PAGE TITLE -->
+  <title>Automated Curtain Opener</title>
+  <meta name="description" content="a curtain that closes and opens" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pagination.css" />
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
-            <img
-              src="./assets/jpeg/pfp_site_bitmoji.jpg"
-              alt="Nicole G. Logo Image"
-              class="header__logo-img"
-            />
-          </div>
-          <span class="header__logo-sub">Nicole G.</span>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="./assets/jpeg/pfp_site_bitmoji.jpg" alt="Nicole G. Logo Image" class="header__logo-img" />
         </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Home</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">About</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">Projects</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#resume" class="header__link">Resume</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./project-2.html#contact" class="header__link">contact</a>
-            </li>
-          </ul>
-          <div class="header__main-ham-menu-cont">
-            <img
-              src="./assets/svg/ham-menu.svg"
-              alt="hamburger menu"
-              class="header__main-ham-menu"
-            />
-            <img
-              src="./assets/svg/ham-menu-close.svg"
-              alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
-            />
-          </div>
+        <span class="header__logo-sub">Nicole G.</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html" class="header__link"> Home</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">Projects</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#resume" class="header__link">Resume</a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./project-2.html#contact" class="header__link">contact</a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
         </div>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
-            </li>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html"> Home </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
-            </li>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#resume"> Resume </a>
-            </li>
-          </ul>
-        </div>
+          <li class="header__sm-menu-link">
+            <a href="./index.html#resume"> Resume </a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <section class="project-cs-hero">
-      <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Automated Curtain Opener</h1>
-        <div class="project-cs-hero__info">
-          <p class="text-primary">
-            This is an embedded sytems project. It uses a microcontroller to sense a noise based on a threshold and actuate motor control for opening and closing curtains. 
-                <strong>TLDR:</strong> Will open and close your curtian when you snap your fingers.
-          </p>
-        </div>
-        <div class="project-cs-hero__cta">
-          <a href="https://youtu.be/sEjKm0Vb6mc" class="btn btn--bg" target="_blank">Demo Video</a>
-        </div>
-        <div class="home-hero__mouse-scroll-cont">
-          <div class="mouse"></div>
-        </div>
+    </div>
+  </header>
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Automated Curtain Opener</h1>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          This is an embedded sytems project. It uses a microcontroller to sense a noise based on a threshold and
+          actuate motor control for opening and closing curtains.
+          <strong>TLDR:</strong> Will open and close your curtian when you snap your fingers.
+        </p>
       </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://youtu.be/sEjKm0Vb6mc" class="btn btn--bg" target="_blank">Demo Video</a>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </div>
 
-    </section>
-    <section class="nav_arrows">
-      <a href="./project-1.html" class="pagination-link pagination-link--prev">
-        <div class="pagination-icon">
-          <i class="material-icons">keyboard_arrow_left</i>
+  </section>
+  <section class="nav_arrows">
+    <a href="./project-1.html" class="pagination-link pagination-link--prev">
+      <div class="pagination-icon">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </div>
+      <span class="pagination-title">
+        <h2><em>Previous Project</em><br>Autonomous RC Car</h2>
+      </span>
+    </a>
+
+    <a href="./project-3.html" class="pagination-link pagination-link--next">
+      <div class="pagination-icon">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </div>
+      <span class="pagination-title">
+        <h2><em>Next Project</em><br>Flying Samurai (JavaScript Game)</h2>
+      </span>
+    </a>
+  </section>
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+        <div class="project-details__showcase-img-cont">
+          <img src="./assets/png/curtain.PNG" alt="Project Image" class="project-details__showcase-img" />
         </div>
-        <span class="pagination-title">
-          <h2><em>Previous Project</em><br>Autonomous RC Car</h2>
-        </span>
-      </a>
-  
-      <a href="./project-3.html" class="pagination-link pagination-link--next">
-        <div class="pagination-icon">
-          <i class="material-icons">keyboard_arrow_right</i>
-        </div>
-        <span class="pagination-title">
-          <h2><em>Next Project</em><br>Flying Samurai (JavaScript Game)</h2>
-        </span>
-      </a>
-    </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/png/curtain.PNG"
-              alt="Project Image"
-              class="project-details__showcase-img"
-            />
+        <div class="project-details__content-main">
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+            <p class="project-details__desc-para">
+              This project is meant to simulate a single component in a smart home system. I choose to create an
+              automated curtain opener.
+              Other than ease of use, automated curtain openers provide enhanced accessibility for individuals with
+              mobility limitations or disabilities.
+              People who may have difficulty reaching or manipulating the curtains can benefit from the convenience of
+              automated control.
+            </p>
+            <p class="project-details__desc-para">
+              Using the <strong>FRDM-K64F</strong> Development Board, the system is designed to use the boards'
+              <strong>interrupt and GPIO pins</strong>.
+              The <strong>microphone</strong> connected on the interrupt pin is adjusted via the on board potentiometer.
+              After a snap is detected and the interrupt triggers a mode change, the corresponding control code block
+              will execute.
+              This is where the <strong>motor</strong> is triggered to use a created <strong>pulley system</strong>.
+              This will be either the opening or closing of the curtians.
+            </p>
+
+            <p class="project-details__desc-para">
+              This was an awesome project using a different development toolchain than my normal Arduino and
+              RaspberryPi.
+              Check out my <strong>demo video and code repo below!</strong>
+            </p>
           </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-              This project is meant to simulate a single component in a smart home system. I choose to create an automated curtain opener.
-              Other than ease of use, automated curtain openers provide enhanced accessibility for individuals with mobility limitations or disabilities. 
-              People who may have difficulty reaching or manipulating the curtains can benefit from the convenience of automated control.
-              </p>
-              <p class="project-details__desc-para">
-               Using the <strong>FRDM-K64F</strong> Development Board, the system is designed to use the boards' <strong>interrupt and GPIO pins</strong>. 
-               The <strong>microphone</strong> connected on the interrupt pin is adjusted via the on board potentiometer.
-               After a snap is detected and the interrupt triggers a mode change, the corresponding control code block will execute.
-               This is where the <strong>motor</strong> is triggered to use a created <strong>pulley system</strong>.
-               This will be either the opening or closing of the curtians.
-              </p>
-
-              <p class="project-details__desc-para">
-                This was an awesome project using a different development toolchain than my normal Arduino and RaspberryPi.
-                Check out my <strong>demo video and code repo below!</strong>
-              </p>
-            </div>
-            <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
-              <div class="skills">
-                <div class="skills__skill">FRDM-K64F Dev Board</div>
-                <div class="skills__skill">C</div>
-                <div class="skills__skill">GPIO Configuration</div>
-                <div class="skills__skill">Interrupt Configuration</div>
-                <div class="skills__skill">Kinetis Design Studio</div>
-              </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See It In Action</h3>
-              <a
-                href="https://youtu.be/sEjKm0Vb6mc"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Demo Video</a
-              >
-              <a
-                href="https://github.com/lpurgitoryl/FRDM-K64F-CurtainOpener"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Repo Link</a
-              >
+          <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tools Used</h3>
+            <div class="skills">
+              <div class="skills__skill">FRDM-K64F Dev Board</div>
+              <div class="skills__skill">C</div>
+              <div class="skills__skill">GPIO Configuration</div>
+              <div class="skills__skill">Interrupt Configuration</div>
+              <div class="skills__skill">Kinetis Design Studio</div>
             </div>
           </div>
+          <div class="project-details__links">
+            <h3 class="project-details__content-title">See It In Action</h3>
+            <a href="https://youtu.be/sEjKm0Vb6mc" class="btn btn--med btn--theme project-details__links-btn"
+              target="_blank">Demo Video</a>
+            <a href="https://github.com/lpurgitoryl/FRDM-K64F-CurtainOpener"
+              class="btn btn--med btn--theme-inv project-details__links-btn" target="_blank">Code Repo Link</a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- <section id="resume" class="contact dynamicBg" style ="padding-inline: 5% 10%;">
+  <!-- <section id="resume" class="contact dynamicBg" style ="padding-inline: 5% 10%;">
       <div class="main-container">
         <div class="contact__form-container">
         </div>
       </div>
     </section> -->
 
-    <footer class="main-footer">
-      <div class="main-container">
-        <div class="main-footer__upper">
-          <div class="main-footer__row main-footer__row-1">
-            <h2 class="heading heading-sm main-footer__heading-sm">
-              <span>Social</span>
-            </h2>
-            <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nicoleb-garcia/">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/linkedin-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="https://github.com/lpurgitoryl">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/github-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a href="mailto:ngarc084@ucr.edu" target="_blank" rel="noopener noreferrer">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/email.png"
-                  alt="icon"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Nicole G. </h4>
-            <p class="main-footer__short-desc">
-              Thanks for viewing my page!
-              Feel free to contact me via any method (Email or Social Media) if you'd like to get in touch.
-            </p>
-            <p id="contact" class="main-footer__short-desc">
-              email: <a href="mailto:ngarc084@ucr.edu" target="_blank" rel="noopener noreferrer">ngarc084@ucr.edu</a>
-            </p>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/nicoleb-garcia/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/lpurgitoryl">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a href="mailto:ngarc084@ucr.edu" target="_blank" rel="noopener noreferrer">
+              <img class="main-footer__icon" src="./assets/png/email.png" alt="icon" />
+            </a>
           </div>
         </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Template made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a>
-           and modified by
-          <a rel="noreferrer" target="_blank" href="https://github.com/lpurgitoryl"
-          >lpurgitoryl</a>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">Nicole G. </h4>
+          <p class="main-footer__short-desc">
+            Thanks for viewing my page!
+            Feel free to contact me via any method (Email or Social Media) if you'd like to get in touch.
+          </p>
+          <p id="contact" class="main-footer__short-desc">
+            email: <a href="mailto:ngarc084@ucr.edu" target="_blank" rel="noopener noreferrer">ngarc084@ucr.edu</a>
+          </p>
         </div>
       </div>
-    </footer>
 
-    <script src="./index.js"></script>
-  </body>
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Template made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        and modified by
+        <a rel="noreferrer" target="_blank" href="https://github.com/lpurgitoryl">lpurgitoryl</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
